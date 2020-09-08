@@ -32,7 +32,7 @@ import webbrowser
 main_df=pd.read_csv('C:\Users\Dell\Downloads\\Data-Collisions.csv')
 
 
-# In[ ]:
+# In[10]:
 
 
 severity_code = main_df['SEVERITYCODE'].values
@@ -145,7 +145,7 @@ print(pd.crosstab(y_test.ravel(), yhatDT.ravel(), rownames = ['True'], colnames 
 print(classification_report(yhatDT,y_test))
 
 
-# In[ ]:
+# In[11]:
 
 
 LR = LogisticRegression(C=0.01, solver='liblinear').fit(os_data_X,os_data_y)
